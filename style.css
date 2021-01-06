@@ -1,0 +1,25 @@
+body{
+  background-color: #222;
+}
+button{
+  height: 80px;
+  width: 80px;
+  outline: none;
+  background-color: white;
+  border: 2px solid white;
+  font-size: 20px;
+}
+input{
+  top: 0px;
+  left: px;
+  height: 40px;
+  width: 328px;
+  font-size: 20px;
+}
+button:hover{
+  background-color: aqua;
+}
+.numholder{
+  border: 1px solid white;
+  width: 336px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="numholder">
+      <table>
+       <input type="text" readonly id="inp"class="inp">
+        <tr>
+          <td>
+             <button onclick="put(7)"class="num">7</button>
+          </td>
+          <td>
+            <button class="num"onclick="put(8)">8</button>
+          </td>
+          <td>
+            <button class="num"onclick="put(9)">9</button>
+          </td>
+          <td><button class="oper"onclick="putoperplus()">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="num"onclick="put(4)">4</button></td>
+          <td><button class="num"onclick="put(5)">5</button></td>
+          <td><button class="num"onclick="put(6)">6</button></td>
+          <td><button class="oper"onclick="putoperminus()">-</button></td>
+      </tr>
+        <tr>
+          <td><button class="num"onclick="put(1)">1</button></td>
+          <td><button class="num"onclick="put(2)">2</button></td>
+          <td><button class="num"onclick="put(3)">3</button></td>
+          <td><button class="oper"onclick="putoperinto()">x</button></td>
+        </tr>
+        <tr>
+          <td><button class="num"onclick="putoperdiv()">/</button></td>
+          <td><button class="num"onclick="clear()">.</button></td>
+          <td><button class="num"onclick="putdot()">C</button></td>
+          <td><button class="oper"onclick="calculate()">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
