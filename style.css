@@ -25,3 +25,15 @@ button:hover{
   border: 1px solid white;
   width: 336px;
 }
+.red{
+background-colour: red;
+}
+.green{
+background-colour: lightgreen;
+}
+.red:hover{
+background-colour: orange;
+}
+.green:hover{
+background-colour: green;
+}
