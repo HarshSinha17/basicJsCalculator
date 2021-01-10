@@ -24,6 +24,7 @@ button:hover{
 .numholder{
   border: 1px solid white;
   width: 336px;
+  border-radius: 20px;
 }
 .red{
 background-colour: red;
