@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+       <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +9,7 @@
 <meta name="google-site-verification" content="H3pDaKDL72BMxaZJA6givqYf9Jrivn6k9Yr_DytEgUc" />
 </head>
 <body>
+   <div id="circle"></div>
   <div class="calculator">
     <div class="numholder">
       <table>
@@ -38,13 +40,21 @@
         </tr>
         <tr>
           <td><button class="num"onclick="putoperdiv()">/</button></td>
-          <td><button class="num"onclick="put(0)">0</button></td>
-          <td><button class="num"onclick="putdot()"class="red">C</button></td>
-          <td><button class="oper"onclick="calculate()"class="green">=</button></td>
+          <td><button class="num"onclick="putoperplus()">+</button></td>
+          <td><button class="num"id="red"onclick="putdot()">C</button></td>
+          <td><button class="oper"id="green"onclick="calculate()">=</button></td>
         </tr>
       </table>
     </div>
   </div>
   <script src="script.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">	VanillaTilt.init(document.querySelector(".calculator"), {
+		max: 25,
+		speed: 400,
+  glare: true, 
+  "max-glare": 1
+	});
+</script>
 </body>
 </html>
